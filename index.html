@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash of Clans</title>
+    <style>
+        /* Body and Background */
+        body {
+            background-image: url(https://th.bing.com/th/id/OIP.btz0p3a6tXPGPWkF2YZn0wHaEK?w=1366&h=768&rs=1&pid=ImgDetMain);
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo a {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Hamburger Icon */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger .line {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 5px 0;
+        }
+
+        /* Media Query for Mobile */
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: #333;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                display: none;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 20px 0;
+            }
+        }
+
+        /* Header and Text Styling */
+        h1 {
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: center;
+            color: aliceblue;
+            font-size: 18px;
+            margin: 20px 10%;
+        }
+
+        /* Image Container */
+        .image-container {
+            display: grid;
+            grid-template-columns: repeat(2, 300px);
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        /* Image Card */
+        .image-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Image Styling */
+        .image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover Effect */
+        .image-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-card:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .image-container {
+                grid-template-columns: repeat(1, 300px); /* Single column on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <a href="#">Clash of Clans</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>"HEROES"</h1>
+    <p>Clash of Clans is a massively multiplayer online game where players train their troops and attack other players' towns to earn gold and elixir, the in-game currency. Gold and elixir can be used to build defenses for the player's town, make upgrades, and more.</p>
+</header>
+
+<div class="image-container">
+    <div class="image-card">
+        <img src="4a74aacac4420bf9e67b8262f4657fc5.png" alt="Image 1">
+    </div>
+    <div class="image-card">
+        <img src="Vector-Archer-Free-PNG-Image-279x279.png" alt="Image 2">
+    </div>
+    <div class="image-card">
+        <img src="barbarianking3dpreview.png" alt="Image 3">
+    </div>
+    <div class="image-card">
+        <img src="RC_Gladiator_pose2_4K_Alpha-1024x1020.webp" alt="Image 4">
+    </div>
+</div>
+<footer>Mark Joven P. Dorado <br> BSIT-1C</footer>
+   <style>
+    footer {
+        color: antiquewhite;
+        text-align: center;
+    }
+   </style>
+</body>
+</html>
